@@ -8,4 +8,5 @@ puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 user_input = gets.strip
 
+converted value = input_to_index(user_input)
 display_board(board)
