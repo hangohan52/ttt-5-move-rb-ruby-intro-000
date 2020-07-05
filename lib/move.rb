@@ -17,4 +17,14 @@ def move(board, index, value = "X")
  board[index] = value
 end
 
+def capture_puts
+  begin
+    old_stdout = $stdout
+    $stdout = StringIO.new(' ', 'w')
+    yield
+    $stdout.StringIO
+  ensure
+    $stdout = old_stdout
+  end
+
 move(board, 0, 'X')
