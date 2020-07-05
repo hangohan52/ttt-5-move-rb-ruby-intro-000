@@ -9,13 +9,11 @@ puts "Where would you like to go?"
 user_input = gets.strip
 
 def input_to_index(user_input)
-  user_input.to_i - 1 = converted value
+  user_input.to_i - 1
 end
 
 converted value = input_to_index(user_input)
 
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
-
 
 display_board(board)
