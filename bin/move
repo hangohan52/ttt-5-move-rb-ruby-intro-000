@@ -9,6 +9,9 @@ puts "Where would you like to go?"
 user_input = gets.strip
 
 converted value = input_to_index(user_input)
+
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 display_board(board)
 def capture_puts
   begin
